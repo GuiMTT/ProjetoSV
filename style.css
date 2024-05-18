@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bodyColor: black;
+    --bodyFontFamily: "Montserrat";
+    --bodyFontFamilyFallback: sans-serif;
+    --bodyFontWeight: 400;
+    --bodyBackgroundColor: rgba(153, 255, 255, 0.6);
+    --bodyBackgroundBorder: rgba(138, 80, 22, 1);
+    --bodyFontSize: 1rem;
+    --bodyFontSizeTitle: 1rem;
+    --sectionBackgroundColorh2: rgba(19, 175, 19, 1);
+    --sectionBackgroundColorp: rgba(219, 255, 255, 0.6);
+}
+body{
+    color: var(--bodyColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-weight: var(--bodyFontWeight);
+    margin: 0;
+    font-size: var(--bodyFontSize);
+}
+body h2{
+    font-size: var(--bodyFontSizeTitle);
+}
+a{
+    text-decoration: none;
+}
+
+
+.align{
+    display: grid;
+    place-content: center;
+}
+
+.backgroundAll{
+    background-image: url("Imagens/BackgroundImg.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.backgroundMain{
+    background: var(--bodyBackgroundColor);
+    backdrop-filter: blur;
+    border: 0.15rem groove var(--bodyBackgroundBorder);
+}
+.backgroundMain h2{
+    background-color: var(--sectionBackgroundColorh2);
+}
+.backgroundMain p, a{
+    background-color: var(--sectionBackgroundColorp);
+    backdrop-filter: blur;
+}
