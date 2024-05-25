@@ -1,0 +1,13 @@
+            <div>
+                <h2>Básico</h2>
+                <a href="#">O Jogador</a>
+                <a href="#">Vida</a>
+                <a href="#">Energia</a>
+            </div>
+            <div>
+                <h2>A Fazenda</h2>
+                <a href="#">Plantações</a>
+            </div>
+            <div>
+                <h2>Meio Ambiente</h2>
+            </div>

@@ -8,10 +8,19 @@
     --bodyBackgroundBorder: rgba(138, 80, 22, 1);
     --bodyFontSize: 1rem;
     --bodyFontSizeTitle: 1rem;
-    --sectionBackgroundColorh2: rgba(19, 175, 19, 1);
-    --sectionBackgroundColorp: rgba(219, 255, 255, 0.6);
+    --sobreBackgroundColorh2: rgba(19, 175, 19, 1);
+    --sobreBackgroundColorText: rgba(219, 255, 255, 0.6);
+    --homeLinkBackgroundColor: rgba(219, 255, 255, 0.6);
+    --homeLinkFontWeight: 600;
+    --homeLinkFontSize: 1.3rem;
+    --defaultBorderRadius: 0.5rem;
+}
+*{
+    padding: 0;
+    margin: 0;
 }
 body{
+    height: 100%;
     color: var(--bodyColor);
     font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
     font-weight: var(--bodyFontWeight);
@@ -22,13 +31,14 @@ body h2{
     font-size: var(--bodyFontSizeTitle);
 }
 a{
+    color: inherit;
     text-decoration: none;
 }
 
 
-.align{
-    display: grid;
-    place-content: center;
+.alignLogo{
+    display: block;
+    margin: 0 auto;
 }
 
 .backgroundAll{
@@ -38,15 +48,48 @@ a{
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .backgroundMain{
     background: var(--bodyBackgroundColor);
     backdrop-filter: blur;
     border: 0.15rem groove var(--bodyBackgroundBorder);
+    margin: 0.7rem;
+    padding: 0.6rem;
+    border-radius: var(--defaultBorderRadius);
 }
 .backgroundMain h2{
-    background-color: var(--sectionBackgroundColorh2);
+    background-color: var(--sobreBackgroundColorh2);
+    font-size: 1.25rem;
+    text-align: center;
 }
-.backgroundMain p, a{
-    background-color: var(--sectionBackgroundColorp);
+.backgroundMain p{
+    background-color: var(--sobreBackgroundColorText);
     backdrop-filter: blur;
+}
+
+.sobreConfig{
+    border: 0.15rem groove var(--bodyBackgroundBorder);
+    border-radius: var(--defaultBorderRadius);
+    margin-bottom: 0.5rem;
+}
+
+.homeLinks{
+    font-weight: var(--homeLinkFontWeight);
+    font-size: var(--homeLinkFontSize);
+    background: var(--homeLinkBackgroundColor);
+    width: 60rem;
+    height: 10rem;
+}
+.homeLinks a{
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+.homeLinks div{
+    border: 0.05rem groove var(--bodyBackgroundBorder);
+    border-radius: var(--defaultBorderRadius);
+}
+
+.homeLinksAlign{
+    display: flex;
 }
