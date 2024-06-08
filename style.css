@@ -8,12 +8,15 @@
     --bodyBackgroundBorder: rgba(138, 80, 22, 1);
     --bodyFontSize: 1.1rem;
     --bodyFontSizeTitle: 1rem;
+    --bodyFontSizeTitleh1: 1.5rem;
+    --bodyFontWeighth1: 660;
     --sobreBackgroundColorh2: rgba(19, 175, 19, 1);
     --sobreBackgroundColorText: rgba(219, 255, 255, 0.6);
     --sobreTextPadding: 0.4rem;
     --homeLinkBackgroundColor: rgba(219, 255, 255, 0.6);
     --homeLinkFontWeight: 600;
     --homeLinkFontSize: 1.3rem;
+    --homeLinkBackgroundColorHover: rgb(130, 206, 206);
     --defaultBorderRadius: 0.5rem;
 }
 *{
@@ -21,12 +24,13 @@
     margin: 0;
 }
 body{
-    height: 100%;
     color: var(--bodyColor);
     font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
     font-weight: var(--bodyFontWeight);
-    margin: 0;
     font-size: var(--bodyFontSize);
+}
+h1{
+    font-size: var(--bodyFontSizeTitleh1);
 }
 body h2{
     font-size: var(--bodyFontSizeTitle);
@@ -36,18 +40,20 @@ a{
     text-decoration: none;
 }
 
-.alignLogo{
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
-}
-
 .backgroundAll{
+    position: relative;
     background-image: url("Imagens/BackgroundImg.png");
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.alignLogo{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .backgroundMain{
@@ -57,6 +63,7 @@ a{
     margin: 0.7rem;
     padding: 0.9rem;
     border-radius: var(--defaultBorderRadius);
+    z-index: 1;
 }
 .backgroundMain h2{
     background-color: var(--sobreBackgroundColorh2);
@@ -66,6 +73,21 @@ a{
 .backgroundMain p{
     background-color: var(--sobreBackgroundColorText);
     backdrop-filter: blur;
+}
+
+.titleUnderline{
+    display: inline-block;
+    position: relative;
+    font-weight: var(--bodyFontWeighth1);
+    
+}
+.titleUnderline::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.11rem;
+    width: 600%;
+    border-bottom: 0.15rem solid rgb(85, 87, 104);
 }
 
 .sobreConfig{
@@ -78,23 +100,38 @@ a{
 }
 
 
+.sumario{
+    margin: 0;
+    margin-top: 2.2rem;
+    border-radius: var(--defaultBorderRadius);
+    border: 0.05rem groove var(--bodyBackgroundBorder);
+}
+
 .homeLinks{
     font-weight: var(--homeLinkFontWeight);
     font-size: var(--homeLinkFontSize);
-    background: var(--homeLinkBackgroundColor);
-    width: 60rem;
-    height: 10rem;
-}
-.homeLinks a{
-    display: block;
-    width: inherit;
-    height: inherit;
 }
 .homeLinks div{
     border: 0.05rem groove var(--bodyBackgroundBorder);
     border-radius: var(--defaultBorderRadius);
+    background: var(--homeLinkBackgroundColor);
+}
+.homeLinks div:hover{
+    background-color: var(--homeLinkBackgroundColorHover);
 }
 
 .homeLinksAlign{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 0rem;
 }
+.homeLinksAlign div{
+    display: grid;
+    place-items: center;
+    height: 4rem;
+}
+
+
