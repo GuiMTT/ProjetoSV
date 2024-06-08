@@ -3,13 +3,14 @@
     --bodyColor: black;
     --bodyFontFamily: "Montserrat";
     --bodyFontFamilyFallback: sans-serif;
-    --bodyFontWeight: 400;
+    --bodyFontWeight: 450;
     --bodyBackgroundColor: rgba(153, 255, 255, 0.6);
     --bodyBackgroundBorder: rgba(138, 80, 22, 1);
-    --bodyFontSize: 1rem;
+    --bodyFontSize: 1.1rem;
     --bodyFontSizeTitle: 1rem;
     --sobreBackgroundColorh2: rgba(19, 175, 19, 1);
     --sobreBackgroundColorText: rgba(219, 255, 255, 0.6);
+    --sobreTextPadding: 0.4rem;
     --homeLinkBackgroundColor: rgba(219, 255, 255, 0.6);
     --homeLinkFontWeight: 600;
     --homeLinkFontSize: 1.3rem;
@@ -35,10 +36,10 @@ a{
     text-decoration: none;
 }
 
-
 .alignLogo{
     display: block;
     margin: 0 auto;
+    width: fit-content;
 }
 
 .backgroundAll{
@@ -54,7 +55,7 @@ a{
     backdrop-filter: blur;
     border: 0.15rem groove var(--bodyBackgroundBorder);
     margin: 0.7rem;
-    padding: 0.6rem;
+    padding: 0.9rem;
     border-radius: var(--defaultBorderRadius);
 }
 .backgroundMain h2{
@@ -72,6 +73,10 @@ a{
     border-radius: var(--defaultBorderRadius);
     margin-bottom: 0.5rem;
 }
+.sobreConfig p{
+    padding: var(--sobreTextPadding);
+}
+
 
 .homeLinks{
     font-weight: var(--homeLinkFontWeight);
