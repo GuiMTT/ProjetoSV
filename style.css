@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
     --bodyColor: black;
-    --bodyFontFamily: "Montserrat";
+    --bodyFontFamily: "Open Sans";
     --bodyFontFamilyFallback: sans-serif;
     --bodyFontWeight: 450;
-    --bodyBackgroundColor: rgba(153, 255, 255, 0.6);
+    --bodyBackgroundColor: rgba(200, 253, 253, 0.82);
     --bodyBackgroundBorder: rgba(138, 80, 22, 1);
     --bodyFontSize: 1.1rem;
-    --bodyFontSizeTitle: 1rem;
-    --bodyFontSizeTitleh1: 1.5rem;
+    --bodyFontSizeHomeTitleh2: 1rem;
+    --bodyFontSizeHomeTitleh1: 1.5rem;
+    --fontSizeGeneralTitleh2:1.2rem;
+    --fontSizeGeneraltitleh1:1.7rem;
+    --bodyFontSizeList: 1.04rem;
     --bodyFontWeighth1: 660;
     --sobreBackgroundColorh2: rgba(19, 175, 19, 1);
     --sobreBackgroundColorText: rgba(219, 255, 255, 0.6);
@@ -60,17 +65,18 @@ a{
     background: var(--bodyBackgroundColor);
     backdrop-filter: blur;
     border: 0.15rem groove var(--bodyBackgroundBorder);
-    margin: 0.7rem;
-    padding: 0.9rem;
+    margin: 1rem;
+    padding: 2rem;
     border-radius: var(--defaultBorderRadius);
     z-index: 1;
 }
-.backgroundMain h2{
+.backgroundMainH2 h2{
     background-color: var(--sobreBackgroundColorh2);
     font-size: 1.25rem;
     text-align: center;
 }
-.backgroundMain p{
+
+.backgroundMainText p{
     background-color: var(--sobreBackgroundColorText);
     backdrop-filter: blur;
 }
@@ -79,15 +85,18 @@ a{
     display: inline-block;
     position: relative;
     font-weight: var(--bodyFontWeighth1);
-    
+    margin-bottom: 1rem;
+    margin-left: 0.4rem;
+    font-size: var(--fontSizeGeneraltitleh1);
 }
 .titleUnderline::after{
     content: "";
     position: absolute;
     left: 0;
     bottom: -0.11rem;
-    width: 600%;
     border-bottom: 0.15rem solid rgb(85, 87, 104);
+    width: 100rem;
+    box-sizing: border-box;
 }
 
 .sobreConfig{
@@ -134,4 +143,54 @@ a{
     height: 4rem;
 }
 
+.menuLinks{
+    font-size: 1.1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.8rem;
+    margin-left: 0.7rem;
+}
+.menuLinks a{
+    color: rgb(25, 42, 195);
+}
+.menuLinks a:hover{
+    text-decoration: underline;
+}
 
+.textGeneral p{
+    font-size: var(--bodyFontSize);
+    margin: 0.3rem;
+    margin-left: 1rem;
+}
+.textGeneral li{
+    font-size: var(--bodyFontSizeList);
+    margin: 0.4rem;
+    margin-left: 3rem;
+}
+.textGeneral h2{
+    font-size: var(--fontSizeGeneralTitleh2);
+}
+
+.spacing{
+    margin-top: 1.4rem;
+}
+
+.introImageConfig{
+    margin-top: 0.3rem;
+    margin-left: 3rem;
+}
+
+.containerIntro{
+    display: flex;
+    margin-right: 4rem;
+}
+.containerIntro img{
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-self: flex-start;
+    width: auto;
+    height: auto;
+}
+
+.paragraphIndent{
+    text-indent: 0.5rem;
+}
