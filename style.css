@@ -5,7 +5,7 @@
     --bodyColor: black;
     --bodyFontFamily: "Open Sans";
     --bodyFontFamilyFallback: sans-serif;
-    --bodyFontWeight: 450;
+    --bodyFontWeight: 390;
     --bodyBackgroundColor: rgba(200, 253, 253, 0.82);
     --bodyBackgroundBorder: rgba(138, 80, 22, 1);
     --bodyFontSize: 1.1rem;
@@ -23,6 +23,7 @@
     --homeLinkFontSize: 1.3rem;
     --homeLinkBackgroundColorHover: rgb(130, 206, 206);
     --defaultBorderRadius: 0.5rem;
+    --fontLinkColor: rgb(25, 42, 195);
 }
 *{
     padding: 0;
@@ -154,7 +155,7 @@ a{
     margin-left: 0.7rem;
 }
 .menuLinks a{
-    color: rgb(25, 42, 195);
+    color: var(--fontLinkColor);
 }
 .menuLinks a:hover{
     text-decoration: underline;
@@ -162,7 +163,7 @@ a{
 
 .textGeneral p{
     font-size: var(--bodyFontSize);
-    margin: 0.3rem;
+    margin: 0.5rem;
     margin-left: 1rem;
 }
 .textGeneral li{
@@ -176,6 +177,7 @@ a{
 
 .spacing{
     margin-top: 1.4rem;
+    margin-bottom: 2.5rem;
 }
 
 .introImageConfig{
@@ -203,6 +205,13 @@ a{
     text-decoration: underline;
     font-size: 1rem;
     float: right;
+}
+
+.mentionLink{
+    color: var(--fontLinkColor);
+}
+.mentionLink:hover{
+    text-decoration: underline;
 }
 
 /* caractere invísivel &nbsp; &nbsp; */
