@@ -12,17 +12,22 @@
         <a href="index.html"> <img src="Imagens/SVLogo.png" alt="Logo do jogo escrito: Stardew Valley"> </a>
     </header>
 
-    <main class="backgroundMain backgroundMainText backgroundMainH2">
+    <div class="alignSearchBar">
+        <input type="text" id="searchInput" placeholder="Buscar...">
+        <div id="resultsContainer" class="searchBarHover"></div>
+    </div>
+
+    <main class="backgroundMain backgroundMainText">
         <div class= "sobreConfig">
-            <h2>Sobre (Site)</h2>
+            <h2 class="highlighttext">Sobre (Site)</h2>
             <p>Bem-vindo ao guia de Stardew Valley! Este site foi criado para ajudar jogadores novos a entenderem melhor os conceitos básicos deste cativante jogo de simulação agrícola.</p>
         </div>
         <div class="sobreConfig">
-            <h2>Sobre (Jogo)</h2>    
+            <h2 class="highlighttext">Sobre (Jogo)</h2>    
             <p>Stardew Valley é um RPG sem fim da vida no campo. Você herdou a antiga fazenda de seu avô no Vale do Orvalho. Equipado com ferramentas de segunda mão e algumas moedas, você irá começar sua nova vida. Será que você consegue aprender a viver da terra e transformar esses campos absurdamente vegetados em uma casa próspera? Não vai ser fácil. Desde que a Corporação Joja veio à cidade, os antigos modos de vida quase desapareceram. O Centro Comunitário, uma vez o lugar mais visitado da cidade, agora está em ruínas. Mas o vale parece cheio de oportunidades. Com um pouco de dedicação, você pode ser a pessoa que restaurará a grandeza do Vale do Orvalho!</p>
         </div>
 
-        <h2 class="sumario">Sumário</h2>
+        <h2 class="sumario highlighttext">Sumário</h2>
         <section class="homeLinks homeLinksAlign">
             <a href="intro.html">
                 <div>
@@ -36,49 +41,49 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="villagers.html">
                 <div>
                     <img src="Imagens/AbigailIcon.png" alt="ícone da personagem Abigail representando os aldeões">Aldeões
                 </div>
             </a>
 
-            <a href="#">
+            <a href="plantas.html">
                 <div>
                     <img src="Imagens/AnimalsIcon.png" alt="ícone de uma galinha representando os animais">Plantações e Animais
                 </div>
             </a>
 
-            <a href="#">
+            <a href="pesca.html">
                 <div>
                     <img src="Imagens/FishIcon.png" alt="ícone de um pexie representando a pescaria">Pescaria
                 </div>
             </a>
 
-            <a href="#">
+            <a href="minas.html">
                 <div>
                     <img src="Imagens/RubyIcon.png" alt="ícone de um nodo de rubi representando as Minas">Mineração
                 </div>
             </a>
 
-            <a href="#">
+            <!-- <a href="#">
                 <div>
                     <img src="Imagens/HoeIcon.png" alt="ícone de uma enxada representando as ferramentas e armas">Ferramentas e Armas
                 </div>
-            </a>
+            </a> -->
 
-            <a href="#">
+            <a href="mapa.html">
                 <div>
                     <img src="Imagens/NoteIcon.png" alt="ícone de um pergaminho representando o mapa">Mapa
                 </div>
             </a>
 
-            <a href="#">
+            <!-- <a href="#">
                 <div>
                     <img src="Imagens/SeasonsIcon.png" alt="Ícone com quatro serapações cada uma representando cada estação do ano">Estações/Clima
                 </div>
-            </a>
+            </a> -->
 
-            <a href="#">
+            <a href="variados.html">
                 <div>
                     <img src="Imagens/QuestIcon.png" alt="ícone de um símbolo de exclamação representando a categoria variados">Variados
                 </div>
@@ -88,5 +93,6 @@
             <a href="copyright.html" class="copyrightHome">Fonte/Copyrights</a>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

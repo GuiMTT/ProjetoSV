@@ -7,6 +7,7 @@
     --bodyFontFamilyFallback: sans-serif;
     --bodyFontWeight: 390;
     --bodyBackgroundColor: rgba(200, 253, 253, 0.82);
+    --bodyBackgroundColorDarkened: rgba(200, 253, 253, 1);
     --bodyBackgroundBorder: rgba(138, 80, 22, 1);
     --bodyFontSize: 1.1rem;
     --bodyFontSizeHomeTitleh2: 1rem;
@@ -75,15 +76,15 @@ a{
     border-radius: var(--defaultBorderRadius);
     z-index: 1;
 }
-.backgroundMainH2 h2{
-    background-color: var(--sobreBackgroundColorh2);
-    font-size: 1.25rem;
-    text-align: center;
-}
-
 .backgroundMainText p{
     background-color: var(--sobreBackgroundColorText);
     backdrop-filter: blur;
+}
+
+.highlighttext{
+    background-color: var(--sobreBackgroundColorh2);
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 .titleUnderline{
@@ -137,7 +138,7 @@ a{
 
 .homeLinksAlign{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 2rem;
     padding: 2rem;
@@ -214,4 +215,34 @@ a{
     text-decoration: underline;
 }
 
-/* caractere invísivel &nbsp; &nbsp; */
+.alignSearchBar{
+    position:absolute;
+    right: 0rem;
+    top: 12rem;
+}
+
+#searchInput {
+    border: 0.05rem groove var(--bodyBackgroundBorder);
+    border-radius: var(--defaultBorderRadius);
+    background-color: var(--bodyBackgroundColorDarkened);
+    width: 14rem;
+    padding: 10px;
+    margin-right: 8rem;
+    margin-top: 0rem;
+}
+
+#resultsContainer {
+    border: 0.05rem groove var(--bodyBackgroundBorder);
+    border-radius: var(--defaultBorderRadius);
+    background-color: var(--bodyBackgroundColorDarkened);
+    width: 15rem;
+    top: 100%;
+    margin-top: 0.1rem;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.searchBarHover:hover{
+    cursor: pointer;
+}
