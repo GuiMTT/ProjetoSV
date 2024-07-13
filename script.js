@@ -7,11 +7,11 @@ const siteContent = [
     { title: 'A Fazenda', url: 'fazenda.html', content: 'A fazenda, fazenda, fazendas' },
     { title: 'Aldeões', url: 'villagers.html', content: 'aldeões, aldeoes, villagers' },
     { title: 'Plantações', url: 'plantas.html', content: 'plantações, plantacoes, animais' },
-    { title: 'Pescaria', url: 'pesca.html', content: 'pescaria, pesca, peixe' },
-    { title: 'Mineração', url: 'minas.html', content: 'minas, pedras' },
+    { title: 'Ferramentas', url: 'ferramenta.html', content: 'ferramenta, arma, armas' },
     { title: 'Mapa', url: 'mapa.html', content: 'mapa' },
+    { title: 'Estações', url: 'clima.html', content: 'estacoes, clima, climas, estação' },
     { title: 'Variados', url: 'variados.html', content: 'variados' },
-    { title: 'Copyrights', url: 'copyright.html', content: 'copyright, direito de uso'},
+    { title: 'Copyrights', url: 'copyright.html', content: 'copyright, direito de uso' },
 ];
 
 searchInput.addEventListener('input', () => {
