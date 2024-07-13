@@ -11,7 +11,7 @@ const siteContent = [
     { title: 'Mapa', url: 'mapa.html', content: 'mapa' },
     { title: 'Estações', url: 'clima.html', content: 'estacoes, clima, climas, estação' },
     { title: 'Variados', url: 'variados.html', content: 'variados' },
-    { title: 'Copyrights', url: 'copyright.html', content: 'copyright, direito de uso' },
+    { title: 'Copyrights', url: 'copyright.html', content: 'copyright, direito de uso' }
 ];
 
 searchInput.addEventListener('input', () => {
